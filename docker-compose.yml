@@ -1,11 +1,10 @@
-version: '3.8'
-
 services:
   backend:
     build: ./backend
     volumes:
-      - ./.env:/app/.env
+      - ./backend:/app          # ✅ Mount the backend source code
       - ./kalshi-private.key:/app/kalshi-private.key
+      - ./.env:/app/.env
     ports:
       - "8000:8000"
     depends_on:

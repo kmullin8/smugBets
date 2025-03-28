@@ -4,3 +4,4 @@ python-dotenv
 redis
 cryptography
 requests
+python-dateutil

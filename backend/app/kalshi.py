@@ -1,7 +1,7 @@
 import os
 from app.models import FadeOpportunity
 from app.redis_cache import load_private_key
-from KalshiClientsBaseV2ApiKey import ExchangeClient
+from .KalshiClientsBaseV2ApiKey import ExchangeClient
 
 # Load from .env
 from dotenv import load_dotenv
